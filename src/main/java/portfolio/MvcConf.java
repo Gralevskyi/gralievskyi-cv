@@ -18,6 +18,8 @@ public class MvcConf implements WebMvcConfigurer {
                 .addResourceLocations("classpath:/js/");
         registry.addResourceHandler("/webfonts/**")
                 .addResourceLocations("classpath:/webfonts/");
+        registry.addResourceHandler("/documents/**")
+                .addResourceLocations("classpath:/documents/");
     }
 
 }
